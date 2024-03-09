@@ -1,4 +1,4 @@
-@icon('res://classes/BetterWebsocket.svg')
+@icon('res://addons/better_websocket/BetterWebsocket.svg')
 class_name BetterWebsocket
 extends Node  # Can also work as a non-Node type
 ## BetterWebsocket v1.1.0 by swark1n
