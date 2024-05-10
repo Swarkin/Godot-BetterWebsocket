@@ -13,7 +13,7 @@ signal packet_received(content: PackedByteArray)
 
 var s := WebSocketPeer.new()		## The underlying Websocket.
 var _processing := false
-var _prev_state := s.STATE_CLOSED	## To get the Websocket state, use [code]better_websocket.s.get_ready_state()[/code] instead.
+var _prev_state := s.STATE_CLOSED
 
 
 func _process(_dt: float) -> void:
@@ -52,7 +52,7 @@ func begin_connection(url: String) -> Error:
 		return err
 
 	_processing = true
-	return err  # OK
+	return err
 
 
 func close_connection(code := 1000) -> void:
